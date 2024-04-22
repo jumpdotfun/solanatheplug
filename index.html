@@ -18,37 +18,40 @@
     background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center;
     background-size: cover;
   }
-  /* Adjust your image paths here */
+  /* Position the clickable areas over the logos in the background */
   .x-logo, .telegram-logo {
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+    border: none; /* No border */
   }
   .x-logo {
-    right: 60px; /* Adjust the position of the X logo */
+    left: 1728px; /* Position from the left of the screen */
+    top: 972px; /* Position from the top of the screen */
+    width: 153px; /* Width of the clickable area */
+    height: 86px; /* Height of the clickable area */
   }
   .telegram-logo {
-    right: 20px; /* Adjust the position of the Telegram logo */
+    left: 1536px; /* Position from the left of the screen */
+    top: 972px; /* Position from the top of the screen */
+    width: 153px; /* Width of the clickable area */
+    height: 86px; /* Height of the clickable area */
   }
 </style>
 </head>
 <body>
 
-<div class="background-image"></div>
+<div class="background-image">
+  <!-- Invisible clickable area for the X logo -->
+  <a href="http://www.x.com/solanatheplug" target="_blank" class="x-logo"></a>
+  
+  <!-- Invisible clickable area for the Telegram logo -->
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank" class="telegram-logo"></a>
+</div>
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bye6JiVGut0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-
-<!-- Make sure to replace 'path_to_X_logo.png' with the correct file name for your X logo -->
-<a href="http://www.x.com/solanatheplug" target="_blank">
-  <img class="x-logo" src="https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/path_to_X_logo.png" alt="X Logo"/>
-</a>
-
-<!-- Make sure to replace 'path_to_telegram_logo.png' with the correct file name for your Telegram logo -->
-<a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank">
-  <img class="telegram-logo" src="https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/path_to_telegram_logo.png" alt="Telegram Logo"/>
-</a>
 
 </body>
 </html>
