@@ -22,39 +22,42 @@
     height: 100%;
     background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center fixed;
     background-size: cover;
+    position: relative; /* This will be the anchor for the absolute positioning of the logos */
   }
-  .footer-links {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
+  /* Invisible clickable areas styled to be positioned over the logos */
   .link {
-    display: inline-block;
-    margin: 0 15px;
+    position: absolute;
     cursor: pointer;
     background-color: transparent; /* The clickable areas are invisible */
+    border: none; /* No border */
     text-decoration: none; /* Removes underline from links */
-    padding: 10px;
+    /* Sizes of the clickable areas */
+    width: 153px;
+    height: 86px;
+  }
+  /* Position the clickable areas at the bottom right of the screen over the logos */
+  .x-logo {
+    right: 50px; /* Distance from the right edge of the screen */
+    bottom: 50px; /* Distance from the bottom edge of the screen */
+  }
+  .telegram-logo {
+    right: 213px; /* X logo width + some padding */
+    bottom: 50px; /* Distance from the bottom edge of the screen */
   }
 </style>
 </head>
 <body>
 
 <div class="background-container">
-  <!-- Placeholder for background image and other content -->
+  <!-- Invisible clickable area for the X logo -->
+  <a href="http://www.x.com/solanatheplug" class="link x-logo" target="_blank"></a>
+  
+  <!-- Invisible clickable area for the Telegram logo -->
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link telegram-logo" target="_blank"></a>
 </div>
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bye6JiVGut0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
-<div class="footer-links">
-  <!-- Invisible clickable area for the X logo -->
-  <a href="http://www.x.com/solanatheplug" class="link" target="_blank">X Link</a>
-  
-  <!-- Invisible clickable area for the Telegram logo -->
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link" target="_blank">Telegram Link</a>
 </div>
 
 </body>
