@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Solana The Plug</title>
 <style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
   .video-container {
     position: absolute;
     top: 10px;
@@ -13,11 +18,11 @@
     height: 315px;
   }
   .background-container {
-    position: relative; /* This will be the anchor for the absolute positioning of the logos */
     width: 100%;
-    height: 100vh;
-    background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center;
+    height: 100%;
+    background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center fixed;
     background-size: cover;
+    position: relative; /* This will be the anchor for the absolute positioning of the logos */
   }
   /* Invisible clickable areas styled to be positioned over the logos */
   .link {
@@ -25,6 +30,7 @@
     position: absolute;
     cursor: pointer;
     background-color: transparent; /* The clickable areas are invisible */
+    text-decoration: none; /* Removes underline from links */
   }
   .x-logo {
     left: 1728px;
