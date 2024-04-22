@@ -12,42 +12,42 @@
     width: 560px;
     height: 315px;
   }
-  .background-image {
+  .background-container {
+    position: relative; /* This will be the anchor for the absolute positioning of the logos */
     width: 100%;
     height: 100vh;
     background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center;
     background-size: cover;
-    position: relative; /* Use relative positioning as a reference for the absolute positioning of child elements */
   }
-  /* Position the clickable areas over the logos in the background */
-  .x-logo, .telegram-logo {
+  /* Invisible clickable areas styled to be positioned over the logos */
+  .link {
+    display: block;
     position: absolute;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0); /* Transparent */
-    border: none; /* No border */
+    background-color: transparent; /* The clickable areas are invisible */
   }
   .x-logo {
-    left: 1728px; /* Position from the left of the screen */
-    top: 972px; /* Position from the top of the screen */
-    width: 153px; /* Width of the clickable area */
-    height: 86px; /* Height of the clickable area */
+    left: 1728px;
+    top: 972px;
+    width: 153px;
+    height: 86px;
   }
   .telegram-logo {
-    left: 1536px; /* Position from the left of the screen */
-    top: 972px; /* Position from the top of the screen */
-    width: 153px; /* Width of the clickable area */
-    height: 86px; /* Height of the clickable area */
+    left: 1536px;
+    top: 972px;
+    width: 153px;
+    height: 86px;
   }
 </style>
 </head>
 <body>
 
-<div class="background-image">
+<div class="background-container">
   <!-- Invisible clickable area for the X logo -->
-  <a href="http://www.x.com/solanatheplug" target="_blank" style="position: absolute; left: 1728px; top: 972px; width: 153px; height: 86px;"></a>
+  <a href="http://www.x.com/solanatheplug" class="link x-logo" target="_blank"></a>
   
   <!-- Invisible clickable area for the Telegram logo -->
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank" style="position: absolute; left: 1536px; top: 972px; width: 153px; height: 86px;"></a>
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link telegram-logo" target="_blank"></a>
 </div>
 
 <div class="video-container">
