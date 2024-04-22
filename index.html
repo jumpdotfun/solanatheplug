@@ -17,6 +17,7 @@
     height: 100vh;
     background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center;
     background-size: cover;
+    position: relative; /* Use relative positioning as a reference for the absolute positioning of child elements */
   }
   /* Position the clickable areas over the logos in the background */
   .x-logo, .telegram-logo {
@@ -43,10 +44,10 @@
 
 <div class="background-image">
   <!-- Invisible clickable area for the X logo -->
-  <a href="http://www.x.com/solanatheplug" target="_blank" class="x-logo"></a>
+  <a href="http://www.x.com/solanatheplug" target="_blank" style="position: absolute; left: 1728px; top: 972px; width: 153px; height: 86px;"></a>
   
   <!-- Invisible clickable area for the Telegram logo -->
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank" class="telegram-logo"></a>
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank" style="position: absolute; left: 1536px; top: 972px; width: 153px; height: 86px;"></a>
 </div>
 
 <div class="video-container">
