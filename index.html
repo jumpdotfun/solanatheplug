@@ -22,42 +22,39 @@
     height: 100%;
     background: url('https://raw.githubusercontent.com/jumpdotfun/solanatheplug/main/Final_LENA.jpg') no-repeat center center fixed;
     background-size: cover;
-    position: relative; /* This will be the anchor for the absolute positioning of the logos */
   }
-  /* Invisible clickable areas styled to be positioned over the logos */
+  .footer-links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
   .link {
-    display: block;
-    position: absolute;
+    display: inline-block;
+    margin: 0 15px;
     cursor: pointer;
     background-color: transparent; /* The clickable areas are invisible */
     text-decoration: none; /* Removes underline from links */
-  }
-  .x-logo {
-    left: 1728px;
-    top: 972px;
-    width: 153px;
-    height: 86px;
-  }
-  .telegram-logo {
-    left: 1536px;
-    top: 972px;
-    width: 153px;
-    height: 86px;
+    padding: 10px;
   }
 </style>
 </head>
 <body>
 
 <div class="background-container">
-  <!-- Invisible clickable area for the X logo -->
-  <a href="http://www.x.com/solanatheplug" class="link x-logo" target="_blank"></a>
-  
-  <!-- Invisible clickable area for the Telegram logo -->
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link telegram-logo" target="_blank"></a>
+  <!-- Placeholder for background image and other content -->
 </div>
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bye6JiVGut0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="footer-links">
+  <!-- Invisible clickable area for the X logo -->
+  <a href="http://www.x.com/solanatheplug" class="link" target="_blank">X Link</a>
+  
+  <!-- Invisible clickable area for the Telegram logo -->
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link" target="_blank">Telegram Link</a>
 </div>
 
 </body>
